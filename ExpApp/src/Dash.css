@@ -1,0 +1,75 @@
+/* FONT */
+body {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* NAVBAR */
+.navbar-ui {
+  font-size: 15px;
+}
+
+/* CARD */
+.card-ui {
+  transition: all 0.25s ease;
+  border: solid 0.5 gray;
+
+}
+
+
+.card-ui:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+  /* background: #f1f3f5; */
+}
+
+
+/* ICON BOX */
+.icon-circle {
+  width: 55px;
+  height: 55px;
+  margin: auto;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+/* TABLE SCROLL */
+.table-scroll {
+  max-height: 390px;
+  overflow-y: auto;
+  border-radius: 10px;
+}
+
+/* sticky header */
+.table-scroll thead th {
+  position: sticky;
+  top: 0;
+  background: #f8f9fa;
+  z-index: 2;
+}
+
+/* TABLE STYLE */
+.table {
+  font-size: 14.5px;
+}
+
+.table thead th {
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.table tbody tr {
+  transition: background 0.2s ease;
+}
+
+.table tbody tr:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.table td,
+.table th {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}

@@ -1,0 +1,87 @@
+/* ================= BACKGROUND ================= */
+.login-bg {
+  min-height: 100vh;
+  background: #ffffff;
+  font-family: "Inter", system-ui, sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ================= CARD (SQUARE) ================= */
+.login-card {
+  width: 380px;
+  height: 380px;                 /* ⭐ square shape */
+  border-radius: 18px;
+  background: white;
+  border: 1px solid #eaeaea;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 28px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* ================= TITLE ================= */
+.login-card h3 {
+  color: #1f2937;
+  font-size: 20px;
+}
+
+/* ================= INPUT ================= */
+.input-group-text {
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+}
+
+.form-control {
+  border: 1px solid #e5e7eb;
+  height: 42px;
+}
+
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.15);
+}
+
+/* ================= BUTTON ================= */
+.btn-primary {
+  border-radius: 30px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  height: 44px;
+  transition: all 0.25s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* ================= SIGNUP LINK ================= */
+.signup-link {
+  cursor: pointer;
+  font-weight: 600;
+  color: #0d6efd;
+  margin-top: 10px;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 420px) {
+  .login-card {
+    width: 92%;
+    height: auto;        /* auto height on small screens */
+  }
+}
